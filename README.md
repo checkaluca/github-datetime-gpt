@@ -1,33 +1,46 @@
-This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with [`plasmo init`](https://www.npmjs.com/package/plasmo).
+# Github Datetime GPT
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This project is a Chrome extension built using Plasmo. It shows absolute dates in GitHub to enhance your browsing experience.
 
-```bash
-pnpm dev
-# or
-npm run dev
-```
+## Demo
 
-Open your browser and load the appropriate development build. For example, if you are developing for the chrome browser, using manifest v3, use: `build/chrome-mv3-dev`.
+![](docs/demo-install.gif)
+![](docs/demo-works.png)
+![](docs/demo-works2.png)
 
-You can start editing the popup by modifying `popup.tsx`. It should auto-update as you make changes. To add an options page, simply add a `options.tsx` file to the root of the project, with a react component default exported. Likewise to add a content page, add a `content.ts` file to the root of the project, importing some module and do some logic, then reload the extension on your browser.
+## Installation & Use
 
-For further guidance, [visit our Documentation](https://docs.plasmo.com/)
+To install and set up the project, follow the steps below:
 
-## Making production build
+1. **Clone the repository:**
 
-Run the following:
+    ```sh
+    git clone <repository-url>
+    cd <repository-directory>
+    ```
 
-```bash
-pnpm build
-# or
-npm run build
-```
+2. **Install dependencies:**
 
-This should create a production bundle for your extension, ready to be zipped and published to the stores.
+    ```sh
+    pnpm install
+    ```
 
-## Submit to the webstores
+3. **Build the project:**
 
-The easiest way to deploy your Plasmo extension is to use the built-in [bpp](https://bpp.browser.market) GitHub action. Prior to using this action however, make sure to build your extension and upload the first version to the store to establish the basic credentials. Then, simply follow [this setup instruction](https://docs.plasmo.com/framework/workflows/submit) and you should be on your way for automated submission!
+    ```sh
+    pnpm build
+    ```
+
+4. **Load the extension in Chrome:**
+
+    - Open Chrome and navigate to `chrome://extensions/`.
+    - Enable "Developer mode" by toggling the switch in the top right corner.
+    - Click on "Load unpacked" and select the [`build/chrome-mv3-prod`](build/chrome-mv3-prod ) directory.
+
+5. **Navigate to your PR to see it in action**
+
+## Contributing
+
+We welcome contributions!
