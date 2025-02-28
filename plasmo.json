@@ -1,0 +1,9 @@
+{
+ "extends": "plasmo/standard",
+ "content_scripts": [
+   {
+     "matches": ["https://github.com/*"],
+     "js": ["content.tsx"]
+   }
+ ]
+}
